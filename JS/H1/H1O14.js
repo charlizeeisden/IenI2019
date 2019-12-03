@@ -12,7 +12,7 @@ function setup() {
 function draw() {
   background('lavender');
   fill('black');
-  // yJOS--;
+   yJOS--;
 
   xJOS=constrain(xJOS,75,width-75);
   yJOS=constrain(yJOS,75,height-75);

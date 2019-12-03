@@ -12,7 +12,7 @@ function draw() {
   translate(125,125);
   rect(0,0,200,200);
   
-  rotate(0);
+  rotate(7);
   
   rect(0,0,200,200);
 }
