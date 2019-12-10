@@ -1,5 +1,4 @@
-var hoogte
-var diameter
+var diameter=0;
 
 function setup() {
   canvas = createCanvas(450,450);
@@ -10,9 +9,14 @@ function setup() {
 
 function draw() {
   noStroke();
-  fill('deepskyblue');
-  ellipse(450,450,200);
-  fill('black');
-  ellipse(100,100,100);
-
+   
+  ellipse(width/2,height/2,diameter);
+  diameter=constrain(diameter,0,450);
+  diameter++;
+  if(diameter>200){
+      fill('white');
+  } 
+  else {
+      fill('yellow');
+    }
 }
