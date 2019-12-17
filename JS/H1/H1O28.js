@@ -1,4 +1,4 @@
-var aantal = 5;
+var aantal = 10;
 
 function setup() {
   canvas = createCanvas(450,450);
@@ -19,9 +19,16 @@ function draw() {
   // tekenen rode bladeren
   
   fill(178, 34, 34,.7);
+  for(var n = 0; n <aantal;n++){
   ellipse(0,0,400,50);
   rotate(360 / aantal);
-
+  }
+  fill('yellow');
+  for(var n = 0; n <75;n++){
+  rect(0,0,75,75);
+  rotate(360 / aantal);
+  }
+  
   
   // gele vulkleur
 
