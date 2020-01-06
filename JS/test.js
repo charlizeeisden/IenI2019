@@ -1,22 +1,20 @@
-var diameter=0;
+var choco;
+var torenX = 100;
+var torenY = 100;
 
 function setup() {
   canvas = createCanvas(450,450);
-  background('silver');
+  background('white');
   canvas.parent('processing');
-  //noLoop();
+
+}
+
+function preload() {
+    choco = loadImage("images/choco.jpg")
+    toren = loadImage("images/toren.jpg")
 }
 
 function draw() {
-  noStroke();
-   
-  ellipse(width/2,height/2,diameter);
-  diameter=constrain(diameter,0,450);
-  diameter++;
-  if(diameter>200){
-      fill('white');
-  } 
-  else {
-      fill('yellow');
-    }
+  background(choco);
+  image(toren,torenX,torenY,250,250);
 }
